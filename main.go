@@ -16,6 +16,7 @@ import (
 )
 
 type apiConfig struct {
+	DB *database.Queries
 }
 
 func main() {
@@ -65,7 +66,7 @@ func main() {
 	}
 
 	log.Printf("Starting server on port %s\n", portString)
-	err := srv.ListenAndServe()
+	err = srv.ListenAndServe()
 	if err != nil {
 		log.Fatal(err)
 	}
