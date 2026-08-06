@@ -35,3 +35,7 @@ func (apiCFG *apiConfig) handlerCreateUser(w http.ResponseWriter, r *http.Reques
 
 	respondWithJSON(w, 201, user)
 }
+
+func (apiCFG *apiConfig) handlerGetUser(w http.ResponseWriter, r *http.Request) {
+
+}
